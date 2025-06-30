@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style/theme.css" />
+  <title>Neurodivergent Lab Assistant</title>
+</head>
+<body>
+  <header>
+    <h1>🧠 Neurodivergent Lab Assistant</h1>
+    <p>Accessible protocol tracker for focused lab work</p>
+  </header>
+  <main>
+    <div id="protocol-container">
+      <h2>Loading protocol...</h2>
+    </div>
+    <button id="next-step" disabled>Next Step ▶</button>
+    <div id="step-details"></div>
+  </main>
+  <footer>
+    <small>&copy; 2025 Neurodivergent Lab Tools</small>
+  </footer>
+  <script src="js/protocolLoader.js"></script>
+  <script src="js/appLogic.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
