@@ -1,0 +1,11 @@
+{
+  "title": "Sample PCR Protocol",
+  "steps": [
+    { "step": "Prepare master mix on ice", "duration": 180 },
+    { "step": "Add template DNA", "duration": 60 },
+    { "step": "Initial denaturation at 95°C for 2 min", "duration": 120 },
+    { "step": "Run PCR cycles: 95°C 30s, 55°C 30s, 72°C 60s (x30)", "duration": 2700 },
+    { "step": "Final extension at 72°C for 5 min", "duration": 300 },
+    { "step": "Hold at 4°C", "duration": 0 }
+  ]
+}
